@@ -2,7 +2,7 @@ var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
 
-  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
 
     var buttonInnerHTML = this.innerHTML;
 
@@ -37,32 +37,32 @@ function makeSound(key) {
       break;
 
     case "T":
-      var tom3 = new Audio('sounds/tom-3.mp3');
+      var tom3 = new Audio("sounds/tom-3.mp3");
       tom3.play();
       break;
 
     case "R":
-      var tom4 = new Audio('sounds/tom-4.mp3');
+      var tom4 = new Audio("sounds/tom-4.mp3");
       tom4.play();
       break;
 
     case "O":
-      var snare = new Audio('sounds/snare.mp3');
+      var snare = new Audio("sounds/snare.mp3");
       snare.play();
       break;
 
     case "D":
-      var crash = new Audio('sounds/crash.mp3');
+      var crash = new Audio("sounds/crash.mp3");
       crash.play();
       break;
 
     case "U":
-      var kick = new Audio('sounds/kick-bass.mp3');
+      var kick = new Audio("sounds/kick-bass.mp3");
       kick.play();
       break;
 
     case "C":
-      var snare = new Audio('sounds/snare.mp3');
+      var snare = new Audio("sounds/snare.mp3");
       snare.play();
       break;
 
@@ -103,4 +103,3 @@ function buttonAnimation(currentKey) {
   }, 100);
 
 }
-
