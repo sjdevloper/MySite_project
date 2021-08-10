@@ -1,3 +1,9 @@
+
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+
+
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {

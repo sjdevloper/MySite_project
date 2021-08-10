@@ -40,8 +40,10 @@ p {
   color: red;
 }
 
-.navbar {
-  padding:0 0 1rem;
+li {
+  line-height: 2;
+  font-family: 'Sacramento', sans-serif;
+  color: red;
 }
 
 .navbar-brand{
@@ -71,7 +73,8 @@ p {
   padding: 3% 2%;
 }
 a{
-  color: #11999E;
+  color: gray;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
@@ -292,3 +295,84 @@ a:hover {
           border-top-left-radius: 0;
           border-top-right-radius: 0;
         }
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+
+
+footer {
+  margin-top: 25px;
+  font-size: 12px;
+  background-color: pink;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Style the header */
+header {
+  background-color: pink;
+  padding: 0.5rem;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: auto;
+  background: #ccc;
+  padding: 20px;
+  margin: auto;
+  text-align: justify;
+
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: auto; /* only for demonstration, should be removed */
+  text-align: justify;
+
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: auto;
+}
+.sys-img{
+  width:500px;
+  height:500px;
+}
+/* Style the footer */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
