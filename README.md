@@ -16,4 +16,5 @@
  > - const app = express();
 > - const port = 3000;
 
-
+### 5.calling node with the script in your command prompt:
+> node index.js
